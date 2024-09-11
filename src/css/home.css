@@ -1,0 +1,101 @@
+/*
+bg: #232931
+bg2: #393E46
+outline: #4ECCA3
+text: #EEEEEE
+
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --bg: #131515;
+  --text: #EEEEEE;
+  --bg2: #2b2c2c;
+  --out: #17DE6A;
+}
+
+.main-text {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin: 0;
+  text-align: center;
+  height: 80vh; 
+}
+
+.main-text h1 {
+  color: var(--text);
+  font-size: 3rem;
+  text-transform: uppercase;
+  position: relative;
+  width: max-content;
+}
+.main-text h1 span{
+  color: var(--out);
+}
+
+/*TYPING EFFECT*/
+.main-text h1::before,
+.main-text h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.main-text h1::before{
+  background: var(--bg);
+  animation: typewriter 6s steps(26) 1s forwards;
+}
+.main-text h1::after{
+  width: 0.1em;
+  background: white;
+  animation: typewriter 6s steps(26) 1s forwards,
+  blink 750ms steps(26) infinite; 
+}
+@keyframes typewriter {
+  to { left: 100%;}
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+/*MOBILE RESPONSE */
+@media (max-width: 400px) {
+.main-text h1::before,
+.main-text h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 0;
+  bottom: 0;
+}
+  .main-text h1::before{
+    background: var(--bg);
+    animation: typewriter 6s steps(26) 1s forwards;
+  }
+  .main-text h1::after{
+    width: 0.1em;
+    background: white;
+    animation: typewriter 6s steps(26) 1s forwards,
+    blink 750ms steps(26) infinite; 
+  }
+  @keyframes typewriter {
+    to { left: 85%;}
+  }
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+}

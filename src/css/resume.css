@@ -1,0 +1,47 @@
+.resume-cont{
+    margin: 0;
+    padding: 0;
+    
+}
+.resume-title h1{
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 60px;
+    color: var(--text);
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.resume-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; 
+  }
+  
+  
+  .code-link {
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    text-decoration: none;
+    background-color: var(--bg2); 
+    color: var(--text);
+    padding: 20px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block; 
+  }
+  
+  .code-link:hover {
+    color: var(--out); 
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+
+
+  

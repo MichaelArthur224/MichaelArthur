@@ -1,0 +1,106 @@
+/* General Styles */
+.wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; 
+    align-items: center;     
+    height: 80vh;    
+    padding-top: 100px;       
+}
+
+.swe-cont {
+    height: 350px;
+    width: 300px;
+    background-color: var(--bg2);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    margin: 10px; 
+    border-radius: 2%;
+}
+
+.project-1, 
+.project-2, 
+.project-3, 
+.project-4 {
+    height: 330px;
+    width: 280px;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    color: var(--text);
+    text-transform: uppercase;
+    border-radius: 2%;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.project-1 p,
+.project-2 p,
+.project-3 p,
+.project-4 p{
+    padding: 10px 10px;
+    font-size: 0.8rem;
+}
+.project-1:hover,
+.project-2:hover,
+.project-3:hover,
+.project-4:hover {
+    transition: all 0.3s ease;
+    width: 290px;
+    height: 340px;
+}
+.project-1:hover h2,
+.project-2:hover h2,
+.project-3:hover h2,
+.project-4:hover h2 {
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    color: var(--out);
+}
+
+.project-1 a, 
+.project-2 a, 
+.project-3 a,
+.project-4 a{
+    height: 40px;
+    width: 100px;
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    text-align: center;
+    display: inline-block; 
+    border: none; 
+    background-color: var(--bg2); 
+    color: var(--text); 
+    cursor: pointer; 
+    border-radius: 4px; 
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.dropdown-content{
+    padding-top: 5px;
+    }
+
+.toggle-button:hover {
+    color: var(--out);
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+    }
+.code-link:hover {
+    color: var(--out);
+    cursor: pointer;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+/*MOBILE RESPONSE */
+@media (max-width: 300px) {
+    .wrapper {
+        flex-direction: column; 
+        align-items: center;   
+    }
+}

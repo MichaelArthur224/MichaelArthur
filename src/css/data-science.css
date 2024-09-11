@@ -1,0 +1,127 @@
+/* General Styles */
+.wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; 
+    align-items: center;     
+    height: 90vh;           
+}
+
+.data {
+    height: 250px;
+    width: 250px;
+    background-color: var(--bg2);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    margin: 10px; 
+    border-radius: 2%;
+}
+
+.project-1, 
+.project-2, 
+.project-3,
+ .project-4 {
+    height: 220px;
+    width: 220px;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    color: var(--text);
+    text-transform: uppercase;
+    border-radius: 2%;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-1 h2, 
+.project-2 h2, 
+.project-3 h2, 
+.project-4 h2 {
+    font-size: 2rem;
+    margin: 0; 
+}
+.project-1:hover, 
+.project-2:hover, 
+.project-3:hover, 
+.project-4:hover {
+    transition: all 0.3s ease;
+    width: 230px;
+    height: 230px;
+}
+.project-1:hover h2, 
+.project-2:hover h2, 
+.project-3:hover h2, 
+.project-4:hover h2 {
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.project-1 a, 
+.project-2 a, 
+.project-3 a, 
+.project-4 a {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    text-align: center;
+    display: inline-block; 
+    border: none; 
+    background-color: var(--bg2); 
+    color: var(--text); 
+    cursor: pointer; 
+    border-radius: 4px; 
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.project-1:hover a, 
+.project-2:hover a, 
+.project-3:hover a, 
+.project-4:hover a {
+    letter-spacing: 1px;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+   
+    cursor: pointer;
+}
+/*MOBILE RESPONSE */
+@media (max-width: 600px) {
+    .wrapper {
+        flex-direction: column; 
+        align-items: center; 
+        padding-top: 20px;
+    }
+    .data{
+        width: 300px;
+        height: 100px;
+    }
+    .project-1, 
+    .project-2, 
+    .project-3, 
+    .project-4 {
+        width: 280px; 
+        height: 110px; 
+        background-color: var(--bg);
+    }
+
+    .project-1 h2, 
+    .project-2 h2, 
+    .project-3 h2, 
+    .project-4 h2 {
+        font-size: 1rem; 
+    }
+    .project-1 a, 
+    .project-2 a, 
+    .project-3 a, 
+    .project-4 a {
+        height: 25px;
+        width: 75px;
+        padding: 10px 10px; 
+        font-size: 0.8rem; 
+    }
+ 
+}

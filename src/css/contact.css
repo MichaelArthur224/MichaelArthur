@@ -1,0 +1,39 @@
+.contact-cont{
+    margin: 0;
+    padding: 0;
+}
+
+.contact-cont h1{
+    margin-top: 60px;
+    color: var(--text);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+  
+}
+.contact-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center; 
+    height: 60vh; 
+    text-align: center;
+  }
+  
+  .contact-me img {
+    height: 150px;
+    width: 150px;
+    padding: 30px; 
+  }
+  .contact-me:hover img {
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    .contact-me img {
+        height: 100px;
+        width: 100px;
+        padding: 30px; 
+      }
+  }
+  
