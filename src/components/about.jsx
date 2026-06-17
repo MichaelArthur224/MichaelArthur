@@ -8,14 +8,11 @@ function About() {
       <div className="about-container">
         <div className="text-bubble">
           <p>
-          I hold a Bachelor’s degree in Computer Science from National University and 
-          am currently pursuing a Master’s in Software Engineering at CSU Fullerton. 
-          With a strong foundation in software development and data science, I thrive 
-          on projects that combine creativity with technical expertise. My skills in 
-          software design and data analysis enable me to transform complex problems into 
-          actionable solutions. I am dedicated to continuous learning in software 
-          engineering and data science to stay at the forefront of the evolving tech 
-          landscape. 
+          I am a software professional with an M.S. in Software Engineering and a B.S. in Computer Science. Currently an ERP Developer at PacSun, 
+            I specialize in architecting Python ETL pipelines using PySpark and Pandas, optimizing Azure SQL queries, and managing large-scale data 
+            with Microsoft Fabric and Snowflake. Previously, as a Software Developer Intern at Boardwalk Arcade, I optimized database performance, 
+            and reduced load times. My background also includes years of leadership experience as a Team Leader at American Eagle Outfitters. 
+            I am passionate about building high-performance, data-driven systems.
           </p>
         </div>
       </div>
